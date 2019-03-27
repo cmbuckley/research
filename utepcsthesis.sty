@@ -1,0 +1,238 @@
+% File: utepcsthesis.sty
+% Author: Luc Longpré
+% email: longpre@cs.utep.edu
+% Date: February 17, 2005.
+%
+% This package was written to help students in the UTEP
+% computer science department who write a thesis using
+% LaTeX2e.
+%
+% The LaTeX file should begin with
+% \documentclass[12pt]{report}
+% \\footnote{usepackage}{utepcsthesis}
+%
+% The following commands are defined in this package:
+% \ssp              Switch to single spacing
+% \dsp              Switch to double spacing
+% \makesigpage      Generates the signature page.
+% \maketitlepage    Generates the title page and starts roman page numbers
+% \StartBody        Sets up to start page 1 of thesis, after preliminaries
+%
+% In addition, we define an environment for the dedication page. This
+% page is optional.
+
+% For some environments we switch back to single-spacing, also
+% provides \dsp in case you need double-spacing where single-spacing
+% is otherwise used.
+\def\ssp{\def\baselinestretch{1}\large\normalsize}
+\def\dsp{\def\baselinestretch{1.5}\large\normalsize}
+
+% \smallssp is used to produce tabular environments in the small font.
+% This is required because single-spacing requires a change in font size.
+% \scriptsizessp is a still smaller version of the same thing.
+
+\def\smallssp{\def\baselinestretch{1}\large\small}
+\def\scriptsizessp{\def\baselinestretch{1}\large\scriptsize}
+
+%The following taken from report.cls, modified
+%to suit our purpose in table of contents, list of figures,
+%list of tables and references.
+
+\renewcommand\tableofcontents{%
+    \if@twocolumn
+      \@restonecoltrue\onecolumn
+    \else
+      \@restonecolfalse
+    \fi
+    \chapter*{\contentsname
+        \@mkboth{%
+           \MakeUppercase\contentsname}{\MakeUppercase\contentsname}}%
+    \addcontentsline{toc}{chapter}{Table of Contents}%
+    \@starttoc{toc}%
+    \if@restonecol\twocolumn\fi
+    }
+\def\l@chapter{\@dottedtocline{0}{0.1em}{1.4em}}
+\def\l@section{\@dottedtocline{1}{1.5em}{2.3em}}
+\def\l@subsection{\@dottedtocline{2}{3.8em}{3.2em}}
+\def\l@subsubsection{\@dottedtocline{3}{7.0em}{4.1em}}
+\def\l@paragraph{\@dottedtocline{4}{10em}{5em}}
+\def\l@subparagraph{\@dottedtocline{5}{12em}{6em}}
+
+\def\listoffigures{\@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn
+ \fi\chapter*{List of Figures\@mkboth
+ {List of Figures}{List of Figures}}
+ \addcontentsline{toc}{chapter}{List of Figures}
+ \@starttoc{lof}\if@restonecol
+ \twocolumn\fi}
+\def\l@figure{\@dottedtocline{1}{1.5em}{2.3em}}
+
+% If you are using the ``thereference'' environment, this is redefinition is useful
+\def\thereferences#1{\chapter*{References\@mkboth
+ {References}{References}}\list
+ {[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}\leftmargin\labelwidth
+ \advance\leftmargin\labelsep
+ \usecounter{enumi}}
+ \def\newblock{\hskip .11em plus .33em minus .07em}
+ \sloppy\clubpenalty4000\widowpenalty4000
+ \sfcode`\.=1000\relax}
+\let\endthereferences=\endlist
+
+%The following, taken from report.cls, was
+%modified to line up the text properly on the left
+%when the text of the caption does not fit on one
+%line.
+\long\def\@makecaption#1#2{%
+  \vskip\abovecaptionskip
+  \sbox\@tempboxa{#1: #2}%
+  \ifdim \wd\@tempboxa >\hsize
+     \sbox\@tempboxa{#1: #2}%
+     \begin{center}
+     \ssp
+     #1: \parbox[t]{5in}{#2}
+     \end{center}
+  \else
+    \global \@minipagefalse
+    \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
+  \fi
+  \vskip\belowcaptionskip}
+  
+\def\@removefromreset#1#2{{%
+  \expandafter\let\csname c@#1\endcsname\@removefromreset
+  \def\@elt##1{%
+    \expandafter\ifx\csname c@##1\endcsname\@removefromreset
+    \else
+      \noexpand\@elt{##1}%
+    \fi}%
+  \expandafter\xdef\csname cl@#2\endcsname{%
+    \csname cl@#2\endcsname}}}
+
+% Page format
+% left and top margins (+1in)
+\setlength{\oddsidemargin}{0.05in}
+\setlength{\topmargin}{0.05in}
+
+% head
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+
+% body
+\setlength{\textwidth}{6.4in}
+\setlength{\textheight}{9.2in}
+
+% foot
+\setlength{\footskip}{0.5in}
+
+\pagestyle{empty}       % No page numbers printing, but still counts pages
+\pagenumbering{roman}   % Roman numeral page numbers
+
+\renewcommand\contentsname{Table of Contents}
+\renewcommand\listfigurename{List of Figures}
+\renewcommand\listtablename{List of Tables}
+\renewcommand\bibname{References}
+
+\newtheoremstyle{plain} % name
+ {1em}     % Space above
+ {0em}       % Space below
+ {}          % Body font
+ {}          % Indent amount (empty = no indent, \parindent = para indent)
+ {\bfseries} % Thm head font
+ {:}         % Punctuation after thm head
+ {.5em}      % Space after thm head: " " = normal interword space;
+             % \newline = linebreak
+ {}          % Thm head spec (can be left empty, meaning `normal')
+
+% Define new theorem blocks
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\renewenvironment{proof}[1][Proof: ]
+		{\vspace{0.0ex}\noindent\textbf{#1}}
+		{\hspace*{0pt}\hfill\qedsymbol\vspace{0.0ex}}
+\newenvironment{remark}[1][Remark:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{observation}[1][Observation:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+%%%%%%%%%%%%%%
+% Title Page %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\maketitlepage}{
+% The following should logically be after the title page
+% but putting it there messes up the first
+% page number position.
+%\setlength{\textheight}{8.4in}
+\pagestyle{plain}
+\thispagestyle{empty}
+%
+\begin{center}
+
+\centering{\huge\bf{\@title}\normalsize}\\[1in]
+
+\@author\\[1in]
+
+M.Sc. Thesis\\[1.25in]
+
+Department of Computer Science\\
+Durham University\\[1in]
+
+\includegraphics[width=1in]{figures/marque.pdf}\\[1in]
+
+\britishdate{\today}
+
+\end{center}
+
+\newpage
+}
+
+\newcommand{\addboldline}[2]{%
+    \immediate\write\@mainaux{%
+        \string\@writefile{#1}{\noindent {\string\bf\space#2}}}
+}
+
+\newcommand{\StartBody}{%
+%
+\include{null}          % this to get Roman numeral page numbering correct
+\pagenumbering{arabic}  % Arabic page numbers
+\setcounter{page}{1}    % Reset page numbering to 1
+}
+
+% put 'Page' heading above numbers in TOC
+\addtocontents{toc}{\hfill{\bf Page}}
+
+% Blackboard bold fonts
+\newcommand{\CC}{\mathbb{C}} % complex numbers
+\newcommand{\NN}{\mathbb{N}} % natural numbers
+\newcommand{\QQ}{\mathbb{Q}} % rational numbers
+\newcommand{\RR}{\mathbb{R}} % real numbers
+\newcommand{\ZZ}{\mathbb{Z}} % integers
+
+\def\mod{{\rm\ mod\ }} % Modulo.
+\def\div{{\rm\ div\ }} % Division entiere.
+\renewcommand{\sup}{\mathop{\rm sup} \,}
+
+% I don't like indenting paragraphs.
+\parindent=0pt
+\parskip=1.5em
+
+% Stretch the spacing a bit
+\renewcommand{\baselinestretch}{1.5}
+
+%---Reset baselinestretch within footnotes. Stolen from doublespace.sty.
+\long\def\@footnotetext#1{\insert\footins{\def\baselinestretch{1}\footnotesize
+    \interlinepenalty\interfootnotelinepenalty 
+    \splittopskip\footnotesep
+    \splitmaxdepth \dp\strutbox \floatingpenalty \@MM
+    \hsize\columnwidth \@parboxrestore
+   \edef\@currentlabel{\csname p@footnote\endcsname\@thefnmark}\@makefntext
+    {\rule{\z@}{\footnotesep}\ignorespaces
+      #1\strut}}}
+
+% Stops footnotes resetting at chapter headings.
+\@removefromreset{footnote}{chapter}
+% Footnotes get symbols
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\newdateformat{britishdate}{\THEDAY\ \monthname[\THEMONTH] \THEYEAR}

@@ -1,0 +1,70 @@
+% thesis.tex
+
+\documentclass[oneside,a4paper,12pt]{report}
+
+\usepackage{amsthm}       % For differing styles in theorems/corollaries/lemmas and definitions/remarks
+\usepackage{amsmath}
+\usepackage{amsfonts}			% Blackboard bold letters
+\usepackage{datetime}
+\usepackage{utepcsthesis} % General style
+\usepackage{graphicx}
+\usepackage{psfig}        % Possibly for the .eps files?
+\usepackage{subfigure}
+%\usepackage{hyperref}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                             Preliminary Pages                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Guessing Numbers Based on Network Routing Capacity}
+% If the title is more than one line, separate the lines with \\[1pc]
+% \title{THIS IS THE FIRST LINE\\[1pc]
+%        THIS IS THE SECOND LINE\\[1pc]
+%        THIS IS THE THIRD LINE}
+
+% The author should also be all caps
+\author{Christopher Buckley B.Sc. (Hons.) Dunelm}
+
+\maketitlepage
+
+\include{abstract}      % Abstract
+\include{acknowl}       % Acknowledgements
+
+\tableofcontents        % Generate Table of Contents
+
+% This is required if the document contains three or more figures
+\listoffigures
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                    Body                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Start arabic numbering, bottom of first page and top right of subsequent pages
+\StartBody
+
+\include{chapter1}         % Introduction
+\include{chapter2}         % Literature Review
+\include{chapter3}         % Solution Formulation
+\include{chapter4}         % Solution
+\include{chapter5}         % Evaluation
+\include{chapter6}         % Conclusions
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                               Concluding Pages                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Bibliography or References, REQUIRED
+\bibliographystyle{amsplain}  % Or possibly \bibliographystyle{plain}, \bibliographystyle{unsrt}
+\addcontentsline{toc}{chapter}{\bibname}
+\bibliography{refs}
+
+% If including appendices, uncomment the following lines
+%\StartAppendix
+%\include{AppendixA}       % Example of how to include an appendix
+%\include{AppendixB}       % Example of how to include an appendix
+
+%\include{vitae}           % Curriculum Vitae 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
