@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="420.42691"
+   height="359.77902"
+   id="svg2792">
+  <defs
+     id="defs2794" />
+  <g
+     transform="translate(-8.056928,-324.2813)"
+     id="layer1">
+    <path
+       d="M 317.23254,105.84925 L 225.79142,264.22992 L 42.909172,264.22992 L -48.531952,105.84925 L 42.909172,-52.531422 L 225.79142,-52.531422 L 317.23254,105.84925 z "
+       transform="translate(82.83251,398.505)"
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path2800" />
+    <path
+       d="M 310.86017,329.25373 L 35.888931,170.499 L 310.86018,11.74429 L 310.86017,329.25373 z "
+       transform="matrix(0.997412,0,0,0.997412,-1.496787,334.2584)"
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:1;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path2802" />
+    <path
+       d="M 310.86017,329.25373 L 35.888931,170.499 L 310.86018,11.74429 L 310.86017,329.25373 z "
+       transform="matrix(-0.997412,0,0,0.997412,435.8624,334.2584)"
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:1;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path3689" />
+    <text
+       x="105.71428"
+       y="340.93362"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gill Sans MT"
+       id="text3691"
+       xml:space="preserve"><tspan
+         x="105.71428"
+         y="340.93362"
+         style="font-family:cmmi10"
+         id="tspan3693">ab</tspan></text>
+    <text
+       x="310"
+       y="340.93362"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gill Sans MT"
+       id="text3695"
+       xml:space="preserve"><tspan
+         x="310"
+         y="340.93362"
+         style="font-family:cmmi10"
+         id="tspan3697">cd</tspan></text>
+    <text
+       x="105.71428"
+       y="683.79077"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gill Sans MT"
+       id="text3699"
+       xml:space="preserve"><tspan
+         x="105.71428"
+         y="683.79077"
+         style="font-family:cmmi10"
+         id="tspan3701">ac</tspan></text>
+    <text
+       x="310"
+       y="683.79077"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gill Sans MT"
+       id="text3703"
+       xml:space="preserve"><tspan
+         x="310"
+         y="683.79077"
+         style="font-family:cmmi10"
+         id="tspan3705">bc</tspan></text>
+    <text
+       x="405.71429"
+       y="507.36218"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gill Sans MT"
+       id="text3707"
+       xml:space="preserve"><tspan
+         x="405.71429"
+         y="507.36218"
+         style="font-family:cmmi10"
+         id="tspan3709">bd</tspan></text>
+    <text
+       x="7.1428657"
+       y="507.36218"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gill Sans MT"
+       id="text3711"
+       xml:space="preserve"><tspan
+         x="7.1428657"
+         y="507.36218"
+         style="font-family:cmmi10"
+         id="tspan3713">ad</tspan></text>
+  </g>
+</svg>
