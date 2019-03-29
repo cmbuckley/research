@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="307.14651"
+   height="281.35757"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <path
+     d="M 69.786349,18.926991 L 18.347051,176.6983 L 152.50086,274.374 L 286.85178,176.96959 L 235.7314,19.094661 L 69.786349,18.926991 z "
+     style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="path1874" />
+  <rect
+     width="54.208538"
+     height="28.977701"
+     x="-202.83739"
+     y="-73.611221"
+     transform="matrix(-0.467018,-0.884248,0.942959,-0.33291,0,0)"
+     style="fill:white;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.55304188;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4872" />
+  <rect
+     width="54.208515"
+     height="28.977667"
+     x="-230.33493"
+     y="-275.10657"
+     transform="matrix(-0.99874,-5.017573e-2,0.195458,-0.980712,0,0)"
+     style="fill:white;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.55304193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4870" />
+  <rect
+     width="56.815815"
+     height="30.243921"
+     x="-133.9343"
+     y="-350.26785"
+     transform="matrix(-0.602713,0.797958,-0.646427,-0.762976,0,0)"
+     style="fill:white;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.55304205;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4868" />
+  <rect
+     width="54.208595"
+     height="28.977661"
+     x="162.73961"
+     y="-130.24713"
+     transform="matrix(0.815797,0.578338,-0.691251,0.722615,0,0)"
+     style="fill:white;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.55304205;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4866" />
+  <rect
+     width="54.208641"
+     height="28.977638"
+     x="18.071917"
+     y="59.070759"
+     transform="matrix(0.737671,-0.675161,0.560223,0.828342,0,0)"
+     style="fill:white;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.5530417;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect2762" />
+  <g
+     transform="translate(1.198708e-5,3.096506e-5)"
+     id="g2005">
+    <text
+       x="73.694588"
+       y="26.595076"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+       id="text2764"
+       xml:space="preserve"><tspan
+         x="73.694588"
+         y="26.595076"
+         style="font-style:normal;font-family:cmmi10"
+         id="tspan2766">x</tspan></text>
+    <text
+       x="87.701942"
+       y="30.658333"
+       style="font-size:16.76979446px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gill Sans MT"
+       id="text2001"
+       xml:space="preserve"><tspan
+         x="87.701942"
+         y="30.658333"
+         style="font-family:cmr10"
+         id="tspan2003">1</tspan></text>
+  </g>
+  <g
+     transform="translate(-15.03996,17.15088)"
+     id="g2011">
+    <text
+       x="73.694588"
+       y="26.595076"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+       id="text2013"
+       xml:space="preserve"><tspan
+         x="73.694588"
+         y="26.595076"
+         style="font-style:normal;font-family:cmmi10"
+         id="tspan2015">y</tspan></text>
+    <text
+       x="86.116043"
+       y="30.658333"
+       style="font-size:16.76979446px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gill Sans MT"
+       id="text2017"
+       xml:space="preserve"><tspan
+         x="86.116043"
+         y="30.658333"
+         style="font-family:cmr10"
+         id="tspan2019">1</tspan></text>
+  </g>
+  <g
+     transform="translate(151.5001,17.53824)"
+     id="g2021">
+    <text
+       x="73.694588"
+       y="26.595076"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+       id="text2023"
+       xml:space="preserve"><tspan
+         x="73.694588"
+         y="26.595076"
+         style="font-style:normal;font-family:cmmi10"
+         id="tspan2025">x</tspan></text>
+    <text
+       x="87.701942"
+       y="30.658333"
+       style="font-size:16.76979446px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gill Sans MT"
+       id="text2027"
+       xml:space="preserve"><tspan
+         x="87.701942"
+         y="30.658333"
+         style="font-family:cmr10"
+         id="tspan2029">2</tspan></text>
+  </g>
+  <g
+     transform="translate(-53.73406,135.8278)"
+     id="g2031">
+    <text
+       x="73.694588"
+       y="26.595076"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+       id="text2033"
+       xml:space="preserve"><tspan
+         x="73.694588"
+         y="26.595076"
+         style="font-style:normal;font-family:cmmi10"
+         id="tspan2035">x</tspan></text>
+    <text
+       x="87.701942"
+       y="30.658333"
+       style="font-size:16.76979446px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gill Sans MT"
+       id="text2037"
+       xml:space="preserve"><tspan
+         x="87.701942"
+         y="30.658333"
+         style="font-family:cmr10"
+         id="tspan2039">5</tspan></text>
+  </g>
+  <g
+     transform="translate(53.73408,233.5939)"
+     id="g2041">
+    <text
+       x="75.93351"
+       y="28.087688"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+       id="text2043"
+       xml:space="preserve"><tspan
+         x="75.93351"
+         y="28.087688"
+         style="font-style:normal;font-family:cmmi10"
+         id="tspan2045">x</tspan></text>
+    <text
+       x="89.940865"
+       y="32.150948"
+       style="font-size:16.76979446px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gill Sans MT"
+       id="text2047"
+       xml:space="preserve"><tspan
+         x="89.940865"
+         y="32.150948"
+         style="font-family:cmr10"
+         id="tspan2049">4</tspan></text>
+  </g>
+  <g
+     transform="translate(185.084,161.2023)"
+     id="g2051">
+    <text
+       x="73.694588"
+       y="26.595076"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+       id="text2053"
+       xml:space="preserve"><tspan
+         x="73.694588"
+         y="26.595076"
+         style="font-style:normal;font-family:cmmi10"
+         id="tspan2055">x</tspan></text>
+    <text
+       x="87.701942"
+       y="30.658333"
+       style="font-size:16.76979446px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gill Sans MT"
+       id="text2057"
+       xml:space="preserve"><tspan
+         x="87.701942"
+         y="30.658333"
+         style="font-family:cmr10"
+         id="tspan2059">3</tspan></text>
+  </g>
+  <g
+     transform="translate(-44.89221,158.9491)"
+     id="g2061">
+    <text
+       x="73.694588"
+       y="26.595076"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+       id="text2063"
+       xml:space="preserve"><tspan
+         x="73.694588"
+         y="26.595076"
+         style="font-style:normal;font-family:cmmi10"
+         id="tspan2065">y</tspan></text>
+    <text
+       x="86.116043"
+       y="30.658333"
+       style="font-size:16.76979446px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gill Sans MT"
+       id="text2067"
+       xml:space="preserve"><tspan
+         x="86.116043"
+         y="30.658333"
+         style="font-family:cmr10"
+         id="tspan2069">5</tspan></text>
+  </g>
+  <g
+     transform="translate(84.2188,235.0865)"
+     id="g2071">
+    <text
+       x="73.694588"
+       y="26.595076"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+       id="text2073"
+       xml:space="preserve"><tspan
+         x="73.694588"
+         y="26.595076"
+         style="font-style:normal;font-family:cmmi10"
+         id="tspan2075">y</tspan></text>
+    <text
+       x="86.116043"
+       y="30.658333"
+       style="font-size:16.76979446px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gill Sans MT"
+       id="text2077"
+       xml:space="preserve"><tspan
+         x="86.116043"
+         y="30.658333"
+         style="font-family:cmr10"
+         id="tspan2079">4</tspan></text>
+  </g>
+  <g
+     transform="translate(192.4333,136.5599)"
+     id="g2081">
+    <text
+       x="73.694588"
+       y="26.595076"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+       id="text2083"
+       xml:space="preserve"><tspan
+         x="73.694588"
+         y="26.595076"
+         style="font-style:normal;font-family:cmmi10"
+         id="tspan2085">y</tspan></text>
+    <text
+       x="86.116043"
+       y="30.658333"
+       style="font-size:16.76979446px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gill Sans MT"
+       id="text2087"
+       xml:space="preserve"><tspan
+         x="86.116043"
+         y="30.658333"
+         style="font-family:cmr10"
+         id="tspan2089">3</tspan></text>
+  </g>
+  <g
+     transform="translate(134.5945,-2.626248)"
+     id="g2091">
+    <text
+       x="73.694588"
+       y="26.595076"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+       id="text2093"
+       xml:space="preserve"><tspan
+         x="73.694588"
+         y="26.595076"
+         style="font-style:normal;font-family:cmmi10"
+         id="tspan2095">y</tspan></text>
+    <text
+       x="86.116043"
+       y="30.658333"
+       style="font-size:16.76979446px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gill Sans MT"
+       id="text2097"
+       xml:space="preserve"><tspan
+         x="86.116043"
+         y="30.658333"
+         style="font-family:cmr10"
+         id="tspan2099">2</tspan></text>
+  </g>
+</svg>

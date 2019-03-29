@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="256.09836"
+   height="208.85086"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <g
+     transform="translate(-12.53082,-6.869471)"
+     id="layer1">
+    <path
+       d="M 202.01409,122.7447 L 0.016412495,122.7447 L 101.01525,-52.190422 L 202.01409,122.7447 z "
+       transform="translate(40.4061,83.84266)"
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path2760" />
+    <text
+       x="130.30968"
+       y="23.521814"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gill Sans MT"
+       id="text2762"
+       xml:space="preserve"><tspan
+         x="130.30968"
+         y="23.521814"
+         style="font-family:cmmi10"
+         id="tspan2764">ab</tspan></text>
+    <text
+       x="11.616753"
+       y="215.45081"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gill Sans MT"
+       id="text2766"
+       xml:space="preserve"><tspan
+         x="11.616753"
+         y="215.45081"
+         style="font-family:cmmi10"
+         id="tspan2768">ac</tspan></text>
+    <text
+       x="247.99245"
+       y="215.45081"
+       style="font-size:24px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gill Sans MT"
+       id="text2770"
+       xml:space="preserve"><tspan
+         x="247.99245"
+         y="215.45081"
+         style="font-family:cmmi10"
+         id="tspan2772">bc</tspan></text>
+  </g>
+</svg>
