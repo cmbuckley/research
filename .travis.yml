@@ -1,0 +1,23 @@
+rvm:
+- 2.1.7
+addons:
+  apt:
+    packages:
+    - texlive-latex-base
+    - texlive-latex-recommended
+    - texlive-latex-extra
+script: make travis
+after_success: make travis_success
+env:
+  global:
+  # GitHub Pages
+  - GIT_NAME: Travis CI
+  - GIT_EMAIL: travis@travis-ci.org
+  - secure: NQGsKwkFNOj42i7AhNQOpCwnK+uiaQpguz1d8AecTgYfFjzw8yDX0kJ5c+B+Fb8UQ25u6uKzwfNJIGj/pvF4Qio24kyk0+kUReILykIQuEuPu5MKmeHDVi6SjVZlKV6k8WR9+kUbtm5EbanAxQwydyL6dgQE4r6X0BhASIHmh7g=
+
+  # Cloudflare purge
+  - CLOUDFLARE_EMAIL: chris@cmbuckley.co.uk
+  - secure: R11ffXEQ3XV4M7lGu9yTv2j0fslR5Vs9EdRlP9OaBkxz2pe7VqcHI68f8PDaUwuse0YmnLsLRoZqTlSwYsxn8cKkiC9FdsDUXG/E1WfBe4s78+LXgSk62ToUqs1C8esxu6uIkX5QrXCVJGQm6mNRUQme9cnwaxOMxol9IGVuWNk=
+branches:
+  only:
+  - master
