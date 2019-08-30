@@ -8,7 +8,7 @@ image:
     alt: Photo of Chris Buckley
 ---
 
-As part of my MSc by Research at the [University of Durham](https://www.dur.ac.uk/), I specialises in theorectical computer science, namely in network coding.
+As part of my MSc by Research at the [University of Durham](https://www.dur.ac.uk/), I specialised in theorectical computer science, namely in network coding.
 
 ## Supervisors
 
@@ -31,4 +31,4 @@ My main work was on extending the research by Søren. The work concentrates main
 
 ## Documents
 
-[/research/thesis.pdf](My masters thesis)
+[My masters thesis](/research/thesis.pdf)
