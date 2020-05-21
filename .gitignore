@@ -4,3 +4,7 @@
 *.lof
 *.log
 *.toc
+_site
+.bundle
+.sass-cache
+vendor
