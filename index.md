@@ -31,4 +31,4 @@ My main work was on extending the research by Søren. The work concentrates main
 
 ## Documents
 
-[My masters thesis](/research/thesis.pdf)
+[Guessing Numbers Based on Network Routing Capacity](/research/thesis.pdf), my masters thesis. Also [available on Durham e-Theses](http://etheses.dur.ac.uk/2072/).
