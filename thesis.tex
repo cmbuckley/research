@@ -4,13 +4,13 @@
 
 \usepackage{amsthm}       % For differing styles in theorems/corollaries/lemmas and definitions/remarks
 \usepackage{amsmath}
-\usepackage{amsfonts}			% Blackboard bold letters
+\usepackage{amsfonts}     % Blackboard bold letters
 \usepackage{datetime}
 \usepackage{utepcsthesis} % General style
 \usepackage{graphicx}
 %\usepackage{psfig}        % Possibly for the .eps files?
 \usepackage{subfigure}
-%\usepackage{hyperref}
+\usepackage[pdfusetitle]{hyperref}
 \usepackage[symbol]{footmisc}
 
 \begin{document}
@@ -28,6 +28,11 @@
 % The author should also be all caps
 \author{Christopher Buckley B.Sc. (Hons.) Dunelm}
 \date{\formatdate{30}{5}{2009}}
+
+\hypersetup{
+    pdflang=en-GB,
+    pdfcreator=pdflatex
+}
 
 \maketitlepage
 
