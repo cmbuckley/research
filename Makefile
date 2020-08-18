@@ -1,18 +1,19 @@
 SHELL=/bin/bash
 GIT_REMOTE := $(shell git config remote.origin.url)
 GH_API := https://api.github.com
-THESIS_TEX = thesis.tex
+SRC = _src
+OUT = -output-directory $(SRC)
 
 .PHONY: pdf travis clean purge travis_success
 
-default: pdf
+default: $(SRC)/thesis.pdf
 
 # https://tex.stackexchange.com/q/53235/4878
-pdf: $(THESIS_TEX)
-	pdflatex $(THESIS_TEX)
-	bibtex thesis
-	pdflatex $(THESIS_TEX)
-	pdflatex $(THESIS_TEX)
+%.pdf:
+	TEXINPUTS=$(SRC):: pdflatex $(OUT) $(*F)
+	BIBINPUTS=$(SRC):: bibtex $*
+	TEXINPUTS=$(SRC):: pdflatex $(OUT) $(*F)
+	TEXINPUTS=$(SRC):: pdflatex $(OUT) $(*F)
 
 travis: default
 ifeq ($(TRAVIS_PULL_REQUEST), true)
@@ -26,7 +27,7 @@ else
 endif
 
 clean:
-	rm -f thesis.pdf *.{aux,bbl,blg,lof,log,toc}
+	rm -f $(SRC)/*.{pdf,aux,bbl,blg,lof,log,toc}
 
 purge:
 	curl -X DELETE "https://api.cloudflare.com/client/v4/zones/$(CLOUDFLARE_ZONE)/purge_cache" \
