@@ -15,9 +15,6 @@ plugins:
 markdown: kramdown
 highlighter: rouge
 
-plugins:
-  - jekyll-remote-theme
-
 defaults:
   - scope:
       path: assets
