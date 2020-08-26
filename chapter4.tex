@@ -14,7 +14,7 @@ This chapter includes the main proofs related to the definition of the guessing 
   \label{k3}
 \end{figure}
 
-It is interesting to study the strategies that yield the highest guessing numbers for players. In Figure~\ref{k3} above, each player must resolve their own message (comprising $\log(s)$ bits) --- however, only one bit may be received from each neighbour. When comparing bits, the probability that the two are the same is $s^{-1/2}$. If three bits are fixed, then since the other three are independent, the probability that each player correctly determines their own message is $s^{-3/2}$, giving a guessing number of $k = 3/2$. In other words, this strategy succeeds with higher probability than uncoordinated random guessing, but it is not as successful as the network coding strategy.
+It is interesting to study the strategies that yield the highest guessing numbers for players. In \autoref{k3} above, each player must resolve their own message (comprising $\log(s)$ bits) --- however, only one bit may be received from each neighbour. When comparing bits, the probability that the two are the same is $s^{-1/2}$. If three bits are fixed, then since the other three are independent, the probability that each player correctly determines their own message is $s^{-3/2}$, giving a guessing number of $k = 3/2$. In other words, this strategy succeeds with higher probability than uncoordinated random guessing, but it is not as successful as the network coding strategy.
 
 \begin{figure}[ht]
 	\centering
@@ -23,7 +23,7 @@ It is interesting to study the strategies that yield the highest guessing number
 	\label{n6}
 \end{figure}
 
-The circulant graph $Ci_6 \, (1, 2)$ in Figure~\ref{n6} contains $6$ vertices. If $4$ bits are fixed, then there are $8$ free bits, giving a probability of success of $(s^{-1/2})^8 = s^{-4}$, and a guessing number of $2$. However, if the graph is split into $3$ node-disjoint pairs, then each pair independently guesses both messages correctly with a likelihood of $1/s$, giving a total probability of $s^{-3}$, or a fractional guessing number $k = 3$. Splitting the graph into two node-disjoint triangles gives the same result: $(s^{-3/2})^2 = s^{-3}$.
+The circulant graph $Ci_6 \, (1, 2)$ in \autoref{n6} contains $6$ vertices. If $4$ bits are fixed, then there are $8$ free bits, giving a probability of success of $(s^{-1/2})^8 = s^{-4}$, and a guessing number of $2$. However, if the graph is split into $3$ node-disjoint pairs, then each pair independently guesses both messages correctly with a likelihood of $1/s$, giving a total probability of $s^{-3}$, or a fractional guessing number $k = 3$. Splitting the graph into two node-disjoint triangles gives the same result: $(s^{-3/2})^2 = s^{-3}$.
 
 The ideas from fractional matching are used here; two node-disjoint odd cycles are formed in which each edge contributes $1/2$ to the guessing number. Paring up the nodes allows each edge in the matching to contribute $1$ to the guessing number.
 
@@ -31,7 +31,7 @@ This strategy can be continued by considering larger graphs. If a graph containi
 
 \section{Guessing Numbers and Cycles}
 
-The graph in Figure~\ref{k3} is an example where linear network coding is more successful than fractional routing. In general, this is not the case. $K_3$ can also be referred to as $C_3$, or a $3$-cycle. An $n$-cycle is a graph containing $n$ vertices and exactly $1$ cycle; each vertex has degree $2$. This section looks at different strategies on (undirected) $n$-cycles.
+The graph in \autoref{k3} is an example where linear network coding is more successful than fractional routing. In general, this is not the case. $K_3$ can also be referred to as $C_3$, or a $3$-cycle. An $n$-cycle is a graph containing $n$ vertices and exactly $1$ cycle; each vertex has degree $2$. This section looks at different strategies on (undirected) $n$-cycles.
 
 \subsection{The $2n$-cycle}
 
@@ -65,7 +65,7 @@ From this it can be seen that:
 
 The $5$-cycle, or pentagon, is an odd cycle, but unlike the $3$-cycle, it is not complete. This loses the advantage of the previous optimal network coding strategy. This optimal strategy is the same as the strategy for the even cycle mentioned above, but with an odd cycle there will always be a vertex excluded from the pairings. Essentially, this means that the guessing number of $C_n$ (utilising linear network coding) is given by $n \div 2$, with the notable exception of $C_3$. Using fractional routing would seem to give a guessing number of $n/2$, giving this method an advantage for odd cycles.
 
-This shows that there exists a non-integer guessing number using fractional routing. To see this, note that it is not possible for $C_5$ to have a guessing number of $3$: if this was the case, then the network $N_5 \in \mathcal{C}_{mu}$ shown in Figure~\ref{pentagon-mu} would be solvable. However it is not solvable using only routing, so the guessing number is less than $3$. This is a particular application of the link between guessing numbers and the solvability of networks. Since the guessing number has been shown to be at least $5/2$, this proves the existence of a non-integer guessing number using fractional routing.
+This shows that there exists a non-integer guessing number using fractional routing. To see this, note that it is not possible for $C_5$ to have a guessing number of $3$: if this was the case, then the network $N_5 \in \mathcal{C}_{mu}$ shown in \autoref{pentagon-mu} would be solvable. However it is not solvable using only routing, so the guessing number is less than $3$. This is a particular application of the link between guessing numbers and the solvability of networks. Since the guessing number has been shown to be at least $5/2$, this proves the existence of a non-integer guessing number using fractional routing.
 
 \begin{figure}[ht]
 	\centering
@@ -79,7 +79,7 @@ It is now clear why the new game must be imagined as two dice values, or some ot
 \subsection{The M{\"o}bius-Band Guessing Strategy}
 \label{sect:pentagon-proof}
 
-As mentioned in Section~\ref{sect:rgg}, The guessing game played on the pentagon has a particularly elegant solution if the alphabet size is a square number, $s = t^2$. Here imagine that each player has two $t$-sided dice, numbered in the usual manner from $1$ to $t$. the two values are given as an ordered pair $(x, y) \in \{1, 2, \dots, t\}^2$. This provides an example of a network where the guessing number does indeed depend on $s$.
+As mentioned in \autoref{sect:rgg}, The guessing game played on the pentagon has a particularly elegant solution if the alphabet size is a square number, $s = t^2$. Here imagine that each player has two $t$-sided dice, numbered in the usual manner from $1$ to $t$. the two values are given as an ordered pair $(x, y) \in \{1, 2, \dots, t\}^2$. This provides an example of a network where the guessing number does indeed depend on $s$.
 
 In the case of a pentagon, the players are assigned values $(x_i, y_i)$, for $i \in \{1, 2, 3, 4, 5\}$. Consider the guessing strategy where each player assumes that the following identities hold:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -93,7 +93,7 @@ In the case of a pentagon, the players are assigned values $(x_i, y_i)$, for $i 
 
 \newpage
 
-This is analogous to each player assuming that one of their dice has the same value as one of their left neighbour's dice, and the other having the same value as one of their right neighbour's dice. This set of identities can be viewed geometrically as a M{\"o}bius band, by writing $x_1 = x_2, x_3 = x_4, x_5 = $ on one side of a strip of paper, $y_1, y_2 = y_3, y_4 = y_5,$ on the other side, and fix the strip together with a half-twist \cite{riis2007}, as in Figure~\ref{fig:mobius-strategy}. Note that other pairings could be used, for instance $x_i = y_{i + 1}$ for $i \in \{1, 2, 3, 4, 5\}$, where $i$ is calculated modulo $5$, provided that there is a connecting edge between the two values.
+This is analogous to each player assuming that one of their dice has the same value as one of their left neighbour's dice, and the other having the same value as one of their right neighbour's dice. This set of identities can be viewed geometrically as a M{\"o}bius band, by writing $x_1 = x_2, x_3 = x_4, x_5 = $ on one side of a strip of paper, $y_1, y_2 = y_3, y_4 = y_5,$ on the other side, and fix the strip together with a half-twist \cite{riis2007}, as in \autoref{fig:mobius-strategy}. Note that other pairings could be used, for instance $x_i = y_{i + 1}$ for $i \in \{1, 2, 3, 4, 5\}$, where $i$ is calculated modulo $5$, provided that there is a connecting edge between the two values.
 
 \begin{figure}[ht]
 	\centering
@@ -102,7 +102,7 @@ This is analogous to each player assuming that one of their dice has the same va
 	\label{fig:mobius-strategy}
 \end{figure}
 
-Using this guessing strategy on the pentagon ensures a guessing number in the half-open interval $(2, 2.5]$, with the upper bound of $2.5$ only achievable if the underlying alphabet contains a square number of letters. In other words, if the size of the alphabet is not a perfect square, then the interval is fully open. Here we have an example where the guessing number depends on $s$. This idea is expressed in Lemma~\ref{lem:mobius-lower-bound} and Lemma~\ref{lem:mobius-upper-bound}.
+Using this guessing strategy on the pentagon ensures a guessing number in the half-open interval $(2, 2.5]$, with the upper bound of $2.5$ only achievable if the underlying alphabet contains a square number of letters. In other words, if the size of the alphabet is not a perfect square, then the interval is fully open. Here we have an example where the guessing number depends on $s$. This idea is expressed in \autoref{lem:mobius-lower-bound} and \autoref{lem:mobius-upper-bound}.
 
 \begin{lemma}[\cite{riis2007}]
  \label{lem:mobius-lower-bound}
@@ -122,7 +122,7 @@ As mentioned above, this lemma requires the alphabet to contain a square number 
 
 \begin{proof}
  As with the proof for the $2n$-cycle, fix any guessing protocol $\mathcal{P}$ and let $L_\mathcal{P}$ denote the set of $5$-tuples $(x_1, x_2, \dots, x_5 ) \in A^5$ for which all nodes guess correctly. Select a string at random from $L_\mathcal{P}$, and calculate the entropies of the random variables in the string, using the logarithm in base $s$, where $s = |A|$. Again using Shannon's identities:
- 
+
 \[H(x_j) \leq 1 \quad \forall j \in \{1, 2, 3, 4, 5\} \]
 \[H(x_{j - 1}, x_{j}, x_{j + 1}) - H(x_{j - 1}, x_{j + 1}) = 0 \quad \forall j \in \{1, 2, 3, 4, 5\}. \]
 
@@ -176,7 +176,7 @@ The same argument may be used to prove a similar theorem about odd cycles in gen
 \end{theorem}
 
 \begin{proof}
-	
+
  As before, setting $(A, B, C) = (\{ x_1 \}, \{ x_3, \dots, x_{2k - 1} \}, \{ x_{2k}, x_{2k + 1} \})$ in (\ref{eqn:shannon}), we have
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{eqnarray*}
@@ -234,7 +234,7 @@ To illustrate the above observation, the simplest example is used here: the case
 
 The three-layers argument is useful as a pictorial description of the message pairing process used in the M{\"o}bius-band guessing strategy. In the case of even cycles, it is not possible to improve on the node-pairing method. To show that it is not possible to improve on a guessing number of $n$ for a $2n$-cycle, consider a pattern where every evenly numbered node is fixed, so the odd-numbered nodes can be uniquely determined.
 
-As in Section~\ref{sect:pentagon-proof} above, each node in a pentagon is assigned two values $(x_i, y_i)$, for $i \in \{1, 2, 3, 4, 5\}$, and $x_i = y_{i + 1}$ for $i \in \{1, 2, 3, 4, 5\}$, where $i$ is calculated modulo $5$. Now, split all nodes $x_i$ as with a bipartite graph, leaving nodes $y_i$ as ``internal'' nodes. The initial and resulting graphs are shown in Figure~\ref{fig:3layers}.
+As in \autoref{sect:pentagon-proof} above, each node in a pentagon is assigned two values $(x_i, y_i)$, for $i \in \{1, 2, 3, 4, 5\}$, and $x_i = y_{i + 1}$ for $i \in \{1, 2, 3, 4, 5\}$, where $i$ is calculated modulo $5$. Now, split all nodes $x_i$ as with a bipartite graph, leaving nodes $y_i$ as ``internal'' nodes. The initial and resulting graphs are shown in \autoref{fig:3layers}.
 
 \begin{figure}[ht]
      \centering
