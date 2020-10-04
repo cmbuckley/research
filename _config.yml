@@ -23,6 +23,7 @@ defaults:
 
 exclude:
   - Makefile
+  - vendor
 
 navigation:
  - title: Home
@@ -39,6 +40,7 @@ navigation:
    url: /projects/
 
 social:
+   hackerone: cmbuckley
    github:    cmbuckley
    linkedin:  cmbuckley
    email:     chris@cmbuckley.co.uk
