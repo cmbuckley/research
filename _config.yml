@@ -22,5 +22,7 @@ defaults:
       exclude: true
 
 exclude:
+  - Gemfile
+  - Gemfile.lock
   - Makefile
   - vendor
