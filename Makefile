@@ -2,6 +2,7 @@ SHELL=/bin/bash
 GIT_REMOTE := $(shell git config remote.origin.url)
 GH_API := https://api.github.com
 THESIS_TEX = thesis.tex
+PURGE_URL := https://cmbuckley.co.uk/research/
 
 .PHONY: pdf travis clean purge travis_success
 
@@ -30,7 +31,8 @@ clean:
 
 purge:
 	curl -X DELETE "https://api.cloudflare.com/client/v4/zones/$(CLOUDFLARE_ZONE)/purge_cache" \
-		-H "X-Auth-Email: $(CLOUDFLARE_EMAIL)" -H "X-Auth-Key: $(CLOUDFLARE_TOKEN)" \
-		-H "Content-Type: application/json" --data '{"purge_everything":true}'
+		-H "Authorization: Bearer $(CLOUDFLARE_TOKEN)" \
+		-H "Content-Type: application/json" \
+		--data '{"files":["$(PURGE_URL)"]}'
 
 travis_success: purge
