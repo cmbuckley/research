@@ -27,7 +27,7 @@ else
 endif
 
 clean:
-	rm -f *.{pdf,aux,bbl,blg,lof,log,toc}
+	rm -f *.{pdf,aux,bbl,blg,lof,log,toc,out}
 
 purge:
 	curl -X DELETE "https://api.cloudflare.com/client/v4/zones/$(CLOUDFLARE_ZONE)/purge_cache" \

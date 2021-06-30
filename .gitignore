@@ -4,6 +4,7 @@
 *.lof
 *.log
 *.toc
+*.out
 _site
 .bundle
 .sass-cache
