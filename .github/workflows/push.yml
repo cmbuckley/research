@@ -1,0 +1,24 @@
+name: On Push
+on:
+  push:
+    branches: master
+jobs:
+  build-assets:
+    name: Build Research Assets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up git repo
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+      - name: Install LaTeX packages
+        run: sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-latex-extra
+      - name: Build assets
+        run: make
+      - name: Commit assets
+        run: |
+          git config user.name 'GitHub Actions'
+          git config user.email '${{ github.actor }}+${{ github.job }}@users.noreply.github.com'
+          git add -f thesis.pdf
+          git commit -m 'Updated GitHub Pages'
+          git push -f origin HEAD:gh-pages
