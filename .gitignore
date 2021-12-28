@@ -8,5 +8,6 @@
 _site
 .bundle
 .sass-cache
-/vendor
+vendor
+thesis
 Gemfile.lock

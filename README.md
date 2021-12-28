@@ -2,9 +2,8 @@
 
 Generates PDF output of thesis.
 
-# Travis
+# Setup for GitHub Actions
 
-```
-travis encrypt GIT_TOKEN=cmbuckley:token
-travis encrypt CLOUDFLARE_ZONE=zone CLOUDFLARE_TOKEN=token
-```
+Need to create a Personal Access Token with `repo` and `user` scopes, and store as a secret called `GH_TOKEN`.
+
+To purge Cloudflare cache, a `CLOUDFLARE_ZONE` and `CLOUDFLARE_TOKEN` (with the `Cache Purge` permission) are also needed.
