@@ -2,6 +2,8 @@ name: On Push
 on:
   push:
     branches: main
+    paths-ignore:
+      - '.github/**'
 jobs:
   build-assets:
     name: Build Research Assets
@@ -16,9 +18,12 @@ jobs:
       - name: Build assets
         run: make
       - name: Commit assets
-        run: |
-          git config user.name 'GitHub Actions'
-          git config user.email '${{ github.actor }}+${{ github.job }}@users.noreply.github.com'
-          git add -f thesis.pdf
-          git commit -m 'Updated GitHub Pages'
-          git push -f origin HEAD:gh-pages
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          add_options: -f
+          file_pattern: thesis.pdf
+          skip_dirty_check: true
+          skip_checkout: true
+          commit_author: 'GitHub Actions <${{ github.actor }}+${{ github.job }}@users.noreply.github.com>'
+          commit_message: Updated GitHub Pages
+          branch: gh-pages
