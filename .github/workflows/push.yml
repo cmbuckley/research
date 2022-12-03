@@ -27,3 +27,4 @@ jobs:
           commit_author: 'GitHub Actions <${{ github.actor }}+${{ github.job }}@users.noreply.github.com>'
           commit_message: Updated GitHub Pages
           branch: gh-pages
+          push_options: --force
