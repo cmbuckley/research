@@ -8,11 +8,11 @@ image:
     alt: Photo of Chris Buckley
 ---
 
-As part of my MSc by Research at the [University of Durham](https://www.dur.ac.uk/), I specialised in theorectical computer science, namely in network coding.
+As part of my MSc by Research at the [University of Durham](https://www.durham.ac.uk/), I specialised in theorectical computer science, namely in network coding.
 
 ## Supervisors
 
-* [Dr Stefan Dantchev](https://www.dur.ac.uk/computer.science/staff/profile/?id=2378)
+* [Dr Stefan Dantchev](https://www.durham.ac.uk/staff/s-s-dantchev/)
 * Prof Hajo Broersma
 
 ### Erdős numbers
@@ -23,7 +23,7 @@ In addition, much of the input was provided by [Søren Riis](http://www.eecs.qmu
 
 ## Research group
 
-[Algorithms and Complexity in Durham](https://www.dur.ac.uk/computer.science/research/acid/)
+[Algorithms and Complexity in Durham](https://algorithmscomplexity.webspace.durham.ac.uk/)
 
 ## Current work
 
