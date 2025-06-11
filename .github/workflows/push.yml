@@ -18,7 +18,7 @@ jobs:
       - name: Build assets
         run: make
       - name: Commit assets
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
           add_options: -f
           file_pattern: thesis.pdf
