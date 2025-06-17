@@ -4,26 +4,29 @@ on:
     branches: main
     paths-ignore:
       - '.github/**'
+  pull_request:
+    branches: main
 jobs:
   build-assets:
     name: Build Research Assets
     runs-on: ubuntu-latest
     steps:
-      - name: Set up git repo
+      - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GH_TOKEN }}
+          # to ensure page_build workflow executes. Fallback for dependabot
+          token: ${{ secrets.GH_TOKEN || github.token }}
       - name: Install LaTeX packages
         run: sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-latex-extra
       - name: Build assets
         run: make
       - name: Commit assets
+        if: ${{ github.event_name == 'push' }}
         uses: stefanzweifel/git-auto-commit-action@v6
         with:
           add_options: -f
           file_pattern: thesis.pdf
           skip_dirty_check: true
-          skip_checkout: true
           commit_author: 'GitHub Actions <${{ github.actor }}+${{ github.job }}@users.noreply.github.com>'
           commit_message: Updated GitHub Pages
           branch: gh-pages
