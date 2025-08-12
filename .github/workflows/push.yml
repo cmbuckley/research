@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           # to ensure page_build workflow executes. Fallback for dependabot
           token: ${{ secrets.GH_TOKEN || github.token }}
