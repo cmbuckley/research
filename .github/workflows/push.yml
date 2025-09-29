@@ -2,20 +2,26 @@ name: On Push
 on:
   push:
     branches: main
-    paths-ignore:
-      - '.github/**'
   pull_request:
     branches: main
+
 jobs:
   build-assets:
     name: Build Research Assets
     runs-on: ubuntu-latest
     steps:
+      - name: Generate a token
+        if: ${{ github.event_name == 'push' }}
+        id: token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ vars.BUXBOT_APP_ID }}
+          private-key: ${{ secrets.BUXBOT_PRIVATE_KEY }}
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           # to ensure page_build workflow executes. Fallback for dependabot
-          token: ${{ secrets.GH_TOKEN || github.token }}
+          token: ${{ steps.token.outputs.token || github.token }}
       - name: Install LaTeX packages
         run: sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-latex-extra
       - name: Build assets
@@ -24,10 +30,12 @@ jobs:
         if: ${{ github.event_name == 'push' }}
         uses: stefanzweifel/git-auto-commit-action@v6
         with:
-          add_options: -f
+          add_options: --force
           file_pattern: thesis.pdf
           skip_dirty_check: true
-          commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
+          commit_user_name: 'buxbot[bot]'
+          commit_user_email: 'buxbot[bot]@users.noreply.github.com'
+          commit_author: 'buxbot[bot] <buxbot[bot]@users.noreply.github.com>'
           commit_message: Updated GitHub Pages
           branch: gh-pages
           push_options: --force
