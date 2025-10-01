@@ -13,7 +13,7 @@ As part of my MSc by Research at the [University of Durham](https://www.durham.a
 ## Supervisors
 
 * [Dr Stefan Dantchev](https://www.durham.ac.uk/staff/s-s-dantchev/)
-* Prof Hajo Broersma
+* {% include archive.html text="Prof Hajo Broersma" date="2009-05-29 19:10:31" url="https://www.dur.ac.uk/computer.science/staff_listing/?id=1172" %}
 
 ### Erdős numbers
 
