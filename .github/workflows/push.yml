@@ -18,7 +18,7 @@ jobs:
           app-id: ${{ vars.BUXBOT_APP_ID }}
           private-key: ${{ secrets.BUXBOT_PRIVATE_KEY }}
       - name: Checkout repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           # to ensure page_build workflow executes. Fallback for dependabot
           token: ${{ steps.token.outputs.token || github.token }}
