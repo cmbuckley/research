@@ -35,6 +35,7 @@ jobs:
           add_options: --force
           file_pattern: thesis.pdf
           skip_dirty_check: true
+          skip_checkout: true
           commit_user_name: 'buxbot[bot]'
           commit_user_email: 'buxbot[bot]@users.noreply.github.com'
           commit_author: 'buxbot[bot] <buxbot[bot]@users.noreply.github.com>'
