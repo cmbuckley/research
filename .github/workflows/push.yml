@@ -13,7 +13,7 @@ jobs:
       - name: Generate a token
         if: ${{ github.event_name == 'push' }}
         id: token
-        uses: actions/create-github-app-token@v2
+        uses: actions/create-github-app-token@v3
         with:
           app-id: ${{ vars.BUXBOT_APP_ID }}
           private-key: ${{ secrets.BUXBOT_PRIVATE_KEY }}
