@@ -20,6 +20,8 @@
 %
 % In addition, we define an environment for the dedication page. This
 % page is optional.
+\RequirePackage[pdfusetitle]{hyperref}
+\RequirePackage{aliascnt}
 
 % For some environments we switch back to single-spacing, also
 % provides \dsp in case you need double-spacing where single-spacing
@@ -95,7 +97,7 @@
     \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
   \fi
   \vskip\belowcaptionskip}
-  
+
 \def\@removefromreset#1#2{{%
   \expandafter\let\csname c@#1\endcsname\@removefromreset
   \def\@elt##1{%
@@ -130,6 +132,13 @@
 \renewcommand\listtablename{List of Tables}
 \renewcommand\bibname{References}
 
+
+\renewcommand{\chapterautorefname}{Chapter}
+\renewcommand{\sectionautorefname}{Section}
+\renewcommand{\subsectionautorefname}{\sectionautorefname}
+\renewcommand{\subsubsectionautorefname}{\sectionautorefname}
+\newcommand{\subfigureautorefname}{\figureautorefname}
+
 \newtheoremstyle{plain} % name
  {1em}     % Space above
  {0em}       % Space below
@@ -144,9 +153,19 @@
 % Define new theorem blocks
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[chapter]
+
+\newaliascnt{lemma}{theorem}
+\newtheorem{lemma}[lemma]{Lemma}
+\aliascntresetthe{lemma}
+
+\newaliascnt{corollary}{theorem}
 \newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{definition}[theorem]{Definition}
+\aliascntresetthe{corollary}
+
+\newaliascnt{definition}{theorem}
+\newtheorem{definition}[definition]{Definition}
+\aliascntresetthe{definition}
+
 \renewenvironment{proof}[1][Proof: ]
 		{\vspace{0.0ex}\noindent\textbf{#1}}
 		{\hspace*{0pt}\hfill\qedsymbol\vspace{0.0ex}}
@@ -154,6 +173,10 @@
 \item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
 \newenvironment{observation}[1][Observation:]{\begin{trivlist}
 \item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+\providecommand*{\lemmaautorefname}{Lemma}
+\providecommand*{\corollaryautorefname}{Corollary}
+\providecommand*{\definitionautorefname}{Definition}
 
 %%%%%%%%%%%%%%
 % Title Page %
@@ -222,7 +245,7 @@ Durham University\\[1in]
 
 %---Reset baselinestretch within footnotes. Stolen from doublespace.sty.
 \long\def\@footnotetext#1{\insert\footins{\def\baselinestretch{1}\footnotesize
-    \interlinepenalty\interfootnotelinepenalty 
+    \interlinepenalty\interfootnotelinepenalty
     \splittopskip\footnotesep
     \splitmaxdepth \dp\strutbox \floatingpenalty \@MM
     \hsize\columnwidth \@parboxrestore
