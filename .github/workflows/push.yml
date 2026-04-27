@@ -4,6 +4,8 @@ on:
     branches: main
   pull_request:
     branches: main
+  repository_dispatch:
+    types: [pages]
 
 permissions:
   contents: read
@@ -19,7 +21,7 @@ jobs:
     uses: cmbuckley/.github/.github/workflows/pages.yml@main
     secrets: inherit
     with:
-      deploy_enabled: ${{ github.event_name == 'push' }}
+      deploy_enabled: ${{ contains(fromJSON('["push", "repository_dispatch"]'), github.event_name) }}
       custom_commands: |
         sudo apt-get update
         sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-latex-extra
